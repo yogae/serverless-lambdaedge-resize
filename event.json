@@ -5,14 +5,24 @@
                 "distributionId": "EXAMPLE"
             },
             "request": {
-                "uri": "/experiment-pixel.jpg",
+                "uri": "/test.jpg",
                 "method": "GET",
                 "clientIp": "2001:cdba::3257:9652",
+                "querystring": "resolution=thumbnail",
                 "headers": {
                     "host": [{
                         "key": "Host",
                         "value": "d123.cf.net"
                     }]
+                },
+                "origin": {
+                    "s3": {
+                        "authMethod": "origin-access-identity",
+                        "customHeaders": {},
+                        "domainName": "bucket_name.s3.ap-northeast-2.amazonaws.com",
+                        "path": "",
+                        "region": "ap-northeast-2"
+                    }
                 }
             },
             "response": {

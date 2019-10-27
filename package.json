@@ -1,5 +1,11 @@
 {
+  "name": "serverless-lambdaedge-resize",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "kim jihyun",
+  "license": "MIT",
+  "dependencies": {},
   "devDependencies": {
-    "serverless-python-requirements": "^5.0.0"
+    "serverless-python-requirements": "4.1.1"
   }
 }

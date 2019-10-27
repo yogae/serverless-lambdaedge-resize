@@ -2,16 +2,6 @@
 # yarn lockfile v1
 
 
-"@iarna/toml@^2.2.3":
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/@iarna/toml/-/toml-2.2.3.tgz#f060bf6eaafae4d56a7dac618980838b0696e2ab"
-  integrity sha512-FmuxfCuolpLl0AnQ2NHSzoUKWEJDFl63qXjzdoWBVyFCXzMGm1spBzk7LeHNoVCiWCF7mRVms9e6jEV9+MoPbg==
-
-appdirectory@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/appdirectory/-/appdirectory-0.1.0.tgz#eb6c816320e7b2ab16f5ed997f28d8205df56375"
-  integrity sha1-62yBYyDnsqsW9e2ZfyjYIF31Y3U=
-
 balanced-match@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
@@ -75,9 +65,9 @@ glob@^7.0.5, glob@^7.1.3:
     path-is-absolute "^1.0.0"
 
 graceful-fs@^4.1.2, graceful-fs@^4.1.6:
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.2.tgz#6f0952605d0140c1cfdb138ed005775b92d67b02"
-  integrity sha512-IItsdsea19BoLC7ELy13q1iJFNmd7ofZH5+X/pJr90/nRoPEX0DJo1dHDbgtYWOhJhcCgMDTOw84RZ72q6lB+Q==
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.3.tgz#4a12ff1b60376ef09862c2093edd908328be8423"
+  integrity sha512-a30VEBm4PEdx1dRB7MFK7BejejvCvBronbLjht+sHuGYj8PHs7M/5Z+rt5lw551vZ7yfTCj4Vuyy3mSJytDWRQ==
 
 immediate@~3.0.5:
   version "3.0.6"
@@ -97,10 +87,10 @@ inherits@2, inherits@~2.0.3:
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
   integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
 
-is-wsl@^2.0.0:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/is-wsl/-/is-wsl-2.1.1.tgz#4a1c152d429df3d441669498e2486d3596ebaf1d"
-  integrity sha512-umZHcSrwlDHo2TGMXv0DZ8dIUGunZ2Iv68YZnrmCiBPkZ4aaOhtv7pXJKeki9k3qJ3RJr0cDyitcl5wEH3AYog==
+is-wsl@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/is-wsl/-/is-wsl-1.1.0.tgz#1f16e4aa22b04d1336b66188a66af3c600c3a66d"
+  integrity sha1-HxbkqiKwTRM2tmGIpmrzxgDDpm0=
 
 isarray@~1.0.0:
   version "1.0.0"
@@ -210,40 +200,26 @@ safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
   integrity sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==
 
-serverless-python-requirements@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/serverless-python-requirements/-/serverless-python-requirements-5.0.0.tgz#f02de93278cdfe471693c722aa6bb66c1ff25942"
-  integrity sha512-WAruPzTQjI4aIsoSegT6l2O+VHXxqjxhHeBiCdorLxBPoCq1GJJrHr8WDczANX14Xgo9+qN8g3V7FxgIzV5jKg==
+serverless-python-requirements@4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/serverless-python-requirements/-/serverless-python-requirements-4.1.1.tgz#3f2ccc14667db413da03040b6751fddb545ccdc7"
+  integrity sha512-+IBsW3ovPBHlHNeWpVJ9KNdF2TITfaXX5pZ65N6UMpOl6nGZuvPAr6JRDXmPUwDbApGTFd4L2F7QmqmrJka5sw==
   dependencies:
-    "@iarna/toml" "^2.2.3"
-    appdirectory "^0.1.0"
     bluebird "^3.0.6"
     fs-extra "^7.0.0"
     glob-all "^3.1.0"
-    is-wsl "^2.0.0"
+    is-wsl "^1.1.0"
     jszip "^3.1.0"
     lodash.get "^4.4.2"
     lodash.set "^4.3.2"
     lodash.uniqby "^4.0.0"
     lodash.values "^4.3.0"
     rimraf "^2.6.2"
-    sha256-file "1.0.0"
-    shell-quote "^1.6.1"
 
 set-immediate-shim@~1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/set-immediate-shim/-/set-immediate-shim-1.0.1.tgz#4b2b1b27eb808a9f8dcc481a58e5e56f599f3f61"
   integrity sha1-SysbJ+uAip+NzEgaWOXlb1mfP2E=
-
-sha256-file@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/sha256-file/-/sha256-file-1.0.0.tgz#02cade5e658da3fbc167c3270bdcdfd5409f1b65"
-  integrity sha512-nqf+g0veqgQAkDx0U2y2Tn2KWyADuuludZTw9A7J3D+61rKlIIl9V5TS4mfnwKuXZOH9B7fQyjYJ9pKRHIsAyg==
-
-shell-quote@^1.6.1:
-  version "1.7.2"
-  resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.7.2.tgz#67a7d02c76c9da24f99d20808fcaded0e0e04be2"
-  integrity sha512-mRz/m/JVscCrkMyPqHc/bczi3OQHkLTqXHEFu0zDhK/qfv3UcOA4SVmRCLmos4bhjr9ekVQubj/R7waKapmiQg==
 
 string_decoder@~1.1.1:
   version "1.1.1"

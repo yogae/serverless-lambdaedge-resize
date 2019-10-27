@@ -1,6 +1,5 @@
-service: serverless-lambdaedge-resize
-plugins:
-  - serverless-python-requirements
+service: serverless-lambdaedge-python
+
 provider:
   name: aws
   runtime: python3.7
@@ -8,13 +7,19 @@ provider:
   versionFunctions: true
   # memorySize: 128
   role: LambdaEdgeRole
+
+plugins:
+  - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    dockerizePip: true
+    fileName: requirements.txt
+
 functions:
   hello:
     handler: handler.hello
-    lambdaAtEdge:
-      distribution: "WebsiteDistribution"
-      eventType: "origin-response"
-      pathPattern: "/lambda"
+
 resources:
   Resources:
     LambdaEdgeRole:
@@ -34,6 +39,10 @@ resources:
             PolicyDocument:
               Version: "2012-10-17"
               Statement:
+                - Effect: Allow
+                  Action:
+                    - s3:*
+                  Resource: "*"
                 - Effect: Allow
                   Action:
                     - logs:CreateLogGroup
